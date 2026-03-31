@@ -302,6 +302,12 @@ a:focus-visible {
   color: var(--color-accent-dark);
 }
 
+.tag-tertiary {
+  background-color: #f0eaf4;
+  color: #5c3d6b;
+  border: 1px solid #d9c8e8;
+}
+
 /* ============================================================
    WORK EXPERIENCE
    ============================================================ */
@@ -393,8 +399,9 @@ a:focus-visible {
    ============================================================ */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  align-items: stretch;
 }
 
 .project-card {
@@ -594,7 +601,7 @@ a:focus-visible {
   }
 
   .project-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .exp-card,
@@ -617,6 +624,10 @@ a:focus-visible {
 @media (max-width: 480px) {
   :root {
     --section-pad: 40px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 
   .nav-inner {
